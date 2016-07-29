@@ -1,0 +1,52 @@
+@import (reference) '../../app/style/_colors';
+@import (reference) '../../app/style/_box-shadow';
+
+.input-block {
+  margin-bottom: 2em;
+}
+
+.input-block input {
+  padding: 5px;
+  margin-bottom: 0px;
+}
+
+.input-block__label {
+
+}
+
+.input-block--error {
+
+}
+
+.input-block--error input {
+  border: 1px solid @notification-error;
+}
+
+.input-block__carat {
+  font-size: 26px;
+  position: relative;
+  left: 20px;
+  color: @notification-error;
+  visibility: hidden;
+}
+
+.input-block__error-messages {
+  visibility: hidden;
+  position: relative;
+  font-size: 14px;
+  color: @white;
+  background-color: @notification-error;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: -18px;
+  min-height: 30px;
+  .box-shadow-med;
+}
+
+.input-block--error .input-block__carat {
+  visibility: visible;
+}
+
+.input-block--error .input-block__error-messages {
+  visibility: visible;
+}

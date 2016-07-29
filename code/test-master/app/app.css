@@ -1,0 +1,72 @@
+*{
+  text-align: center;
+  font-size: 16px;
+}
+
+/*div, button{
+	margin: 0 10px;
+}*/
+menu{
+  margin-left:-30px;
+}
+.location_value {
+  color: #;
+}
+#title{
+  font-size: 48px;
+}
+
+#btnMyLocation, #btnResetLocation {
+  margin: 25px 10px 40px 10px;
+
+
+}
+
+table > tbody > tr > td.field_name {
+  text-align: left;
+  /*overflow:hidden;
+  white-space:nowrap;*/
+
+}
+
+table > tbody > tr > td.location_value {
+  width: 260px;
+  text-align: right;
+}
+
+#title{
+  width:100%;
+  background-color:#ffffff;
+  border-bottom:1px solid #e8e8e8;
+  box-shadow: 1px 0 4px 5px rgba(18,18,18,0.09);
+  padding:10px 0;
+  text-align: center;
+
+}
+.content{
+  background:#eff9ff;
+  display:block;
+  margin-top:25px;
+  box-shadow: 1px 0 4px 5px rgba(18,18,18,0.09);
+  padding: 30px 0;
+  min-height:800px;
+}
+
+.google-map-div{
+  position:relative;
+  margin: auto;
+  padding-bottom: 75%; // This is the aspect ratio
+overflow: hidden;
+  height:250px;
+
+}
+.domain-text-field{
+  max-width:400px;
+  display: inline-block;
+  margin:20px 10px;
+}
+@media only screen and (max-width: 480px) {
+  .domain-text-field{
+    margin:10px;
+  }
+}

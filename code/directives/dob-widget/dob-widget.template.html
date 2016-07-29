@@ -1,0 +1,5 @@
+<div class="sc-dob-widget" validation-messages='{"pastToday": "is past today", "badDate" : "has an invalid date"}'>
+<select class="sc-dob-widget__month form-control" placeholder="Month" ng-model="dobWidgetCtrl.selectedMonth" ng-options="month.key as month.value for month in dobWidgetCtrl.months"></select>
+<input type="text" numeric-input class="sc-dob-widget__date form-control"  ng-model="dobWidgetCtrl.selectedDate"  placeholder="Day"   maxlength="2" minlength="1"  name="date" label="Date" />
+<input type="text" numeric-input class="sc-dob-widget__year form-control"  ng-model="dobWidgetCtrl.selectedYear" placeholder="Year" maxlength="4" minlength="4" name="year" label="Year"/>
+</div>

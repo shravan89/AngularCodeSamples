@@ -1,0 +1,61 @@
+<h1 id="title">GeoLocation Test</h1>
+<div class="content">
+  <section class="col-sm-6">
+<div id="mainContent"> </div>
+<div id="geoLocationContainer" class=""></div>
+
+  <h4>Estimated location</h4>
+
+  <table align="center" ng-class="resetLocationDetails() ? empty ">
+    <tbody>
+    <tr>
+      <td class="field_name">IP</td>
+      <td id="location_query" class="location_value">{{ip}}</td>
+    </tr>
+    <tr>
+      <td class="field_name">Country</td>
+      <td id="location_country" class="location_value">{{country}}</td>
+    </tr>
+    <tr>
+      <td class="field_name">Region</td>
+      <td id="location_regionName" class="location_value">{{region}}</td>
+    </tr>
+    <tr>
+      <td class="field_name">City</td>
+      <td id="location_city" class="location_value">{{city}}</td>
+    </tr>
+    <tr>
+      <td class="field_name">Time Zone</td>
+      <td id="location_timezone" class="location_value">{{timezone}}</td>
+    </tr>
+    <tr>
+      <td class="field_name">Latitude</td>
+      <td id="location_lat" class="location_value">{{lat}}</td>
+    </tr>
+    <tr>
+      <td class="field_name">Longitude</td>
+      <td id="location_lon" class="location_value">{{long}}</td>
+    </tr>
+    </tbody>
+  </table>
+    <menu>
+      <button ng-click="getMyLocation()" id="btnMyLocation" type="button" class="btn btn-default">My location</button>
+      <button ng-click="resetLocationDetails()" id="btnResetLocation" type="button" class="btn btn-default">Reset location</button>
+    </menu>
+  </section>
+
+  <section class="col-sm-6">
+<div id="menuInfo" class="menu-info-css">
+
+  <h4>Website Domain</h4>
+  <label class="sr-only" for="exampledomainaddress"> Enter Domain Address</label>
+  <input id="webSiteDomainTF" class="domain-text-field form-control" placeholder="www.domain.com" ng-model="domain" />
+  <button id="locateButton" type="submit" value="locate" class="btn btn-primary" ng-click="onClicked()">Locate</button>
+</div>
+<br>
+    <h4>Location On The Map</h4>
+<div id="googleMap" class="google-map-div"></div>
+
+
+</section>
+</div>
